@@ -1,33 +1,28 @@
-ESP Max Prototyping Board
-=========================
+ESPREMOTE: ESP8266 Remote Control Adapter
+=========================================
 
-Copyright 2016 SuperHouse Automation Pty Ltd  
+Copyright 2017 SuperHouse Automation Pty Ltd  
 SuperHouse site:  www.superhouse.tv  
 SuperHouse email: info@superhouse.tv  
 
-Prototyping board for IoT projects using the ESP8266 microcontroller
-on the ESP-12E module.
+Allows a random RF remote control to be connected to an ESP8266 so
+that it can be triggered remotely.
 
 Features:
 
- * CP2102 USB-to-Serial converter.
- * 12 digital I/O channels at 3.3V.
- * 1 analog input with 0-3.2V range.
- * Power from USB or DC IN
- * 5V and 3.3V voltage regulators.
- * Jumper to select power source.
- * Prototyping area.
- * Expansion headers in D1 Mini format to suit expansion shields.
+ * ESP8266 MCU with wifi.
+ * 4 low-side switched transistor outputs.
+ * Headers for GND and 3.3V to power the remote control.
+ * Switchmode voltage regulator module (5-23Vdc input).
+ * 2.1mm DC socket.
 
-![Oblique view](https://raw.githubusercontent.com/SuperHouse/ESPMAX/master/images/ESPMAX-v1_0-oblique.jpg)
+![Oblique view](https://raw.githubusercontent.com/SuperHouse/ESPREMOTE/master/images/ESPREMOTE-v1_0-oblique.jpg)
 
-![Top view](https://raw.githubusercontent.com/SuperHouse/ESPMAX/master/images/ESPMAX-v1_0-top.png)
-
-![Bottom view](https://raw.githubusercontent.com/SuperHouse/ESPMAX/master/images/ESPMAX-v1_0-bottom.png)
+![Bottom view](https://raw.githubusercontent.com/SuperHouse/ESPREMOTE/master/images/ESPREMOTE-v1_0-bottom.jpg)
 
 More information is available at:
 
-  http://www.superhouse.tv/espmax
+  http://www.superhouse.tv/espremote
 
 
 INSTALLATION
