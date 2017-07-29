@@ -13,13 +13,13 @@
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="15" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -190,7 +190,7 @@
 <text x="14.224" y="11.049" size="0.889" layer="25" font="vector" ratio="15">D8</text>
 <text x="14.224" y="13.589" size="0.889" layer="25" font="vector" ratio="15">D7</text>
 <text x="14.224" y="21.209" size="0.889" layer="25" font="vector" ratio="15">D0</text>
-<text x="34.186" y="52.9" size="1.27" layer="22" font="vector" ratio="12" distance="36" rot="MR0">(C)2017 SuperHouse
+<text x="35.186" y="67.9" size="1.5" layer="22" font="vector" ratio="12" distance="36" rot="MR0">(C)2017 SuperHouse
 Automation Pty Ltd</text>
 <text x="23.5" y="71.5" size="1.9304" layer="21" font="vector" ratio="18" distance="40" rot="SR0" align="bottom-center">ESP8266 Remote</text>
 <wire x1="18.672" y1="31.99" x2="17.148" y2="28.688" width="0.4064" layer="21" curve="309.2564"/>
@@ -219,8 +219,8 @@ Automation Pty Ltd</text>
 <hole x="3" y="66" drill="3.2"/>
 <text x="30.438" y="9.814" size="1.016" layer="21" font="vector" ratio="13" rot="SR0">VIN: 5-23Vdc</text>
 <text x="13" y="6" size="1.27" layer="21" font="vector" ratio="18" distance="40" rot="SR0" align="bottom-center">RESET</text>
-<text x="34.186" y="61.158" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">Arduino board profile:
-Generic ESP8266</text>
+<text x="40.186" y="59.158" size="1.7" layer="22" font="vector" ratio="15" rot="MR0">Arduino board profile:
+"Generic ESP8266 Module"</text>
 <wire x1="46" y1="66" x2="44" y2="68" width="0.3048" layer="21" curve="90"/>
 <wire x1="44" y1="68" x2="3" y2="68" width="0.3048" layer="21"/>
 <wire x1="3" y1="68" x2="1" y2="66" width="0.3048" layer="21" curve="90"/>
@@ -296,10 +296,8 @@ control here</text>
 <text x="1.5" y="14.5" size="1.778" layer="21" font="vector" ratio="18" distance="40" rot="SR0">SuperHouse
 Automation</text>
 <text x="1.5" y="12" size="1.4224" layer="21" font="vector" ratio="15">www.superhouse.tv</text>
-<text x="34.186" y="44.158" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">Licensed under the
-terms of the TAPR
-Open Hardware Licence:
-tapr.org/ohl</text>
+<text x="40.186" y="42.158" size="1.3" layer="22" font="vector" ratio="15" rot="MR0">Licensed under the TAPR Open
+Hardware Licence: tapr.org/ohl</text>
 <circle x="42" y="11" radius="0.5" width="0.5" layer="22"/>
 <hole x="23.5" y="66" drill="3.2"/>
 <hole x="23.5" y="39" drill="3.2"/>
@@ -319,6 +317,10 @@ tapr.org/ohl</text>
 <wire x1="13" y1="23" x2="14" y2="22" width="0.254" layer="21" curve="90"/>
 <wire x1="14" y1="22" x2="15" y2="23" width="0.254" layer="21" curve="90"/>
 <wire x1="15" y1="23" x2="15" y2="25" width="0.254" layer="21"/>
+<text x="34.186" y="49.158" size="1.5" layer="22" font="vector" ratio="15" distance="40" rot="MR0">Output 1: GPIO12
+Output 2: GPIO13
+Output 3: GPIO14
+Output 4: GPIO16</text>
 </plain>
 <libraries>
 <library name="freetronics-jon">

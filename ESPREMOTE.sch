@@ -5725,6 +5725,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="10.16" y="124.46" size="2.1844" layer="97" font="vector" ratio="15">ESP-12 Module (ESP8266)</text>
 <text x="106.68" y="172.72" size="2.1844" layer="97" font="vector" ratio="15">FTDI Header</text>
 <text x="10.16" y="167.64" size="1.778" layer="97" font="vector" ratio="10">5-23Vdc input</text>
+<text x="104.14" y="114.3" size="1.778" layer="97" font="vector" ratio="10">Output 1: GPIO12
+Output 2: GPIO13
+Output 3: GPIO14
+Output 4: GPIO16</text>
 </plain>
 <instances>
 <instance part="LED1" gate="G$1" x="91.44" y="149.86"/>
@@ -6328,4 +6332,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
