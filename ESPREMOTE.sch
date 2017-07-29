@@ -5694,7 +5694,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="P+9" library="freetronics-original" deviceset="3.3V" device=""/>
 <part name="P+10" library="freetronics-original" deviceset="3.3V" device=""/>
 <part name="R7" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="10k"/>
-<part name="LED6" library="freetronics-master-v1" deviceset="LED" device="0603" value="CH1/RED"/>
+<part name="LED6" library="freetronics-master-v1" deviceset="LED" device="0603" value="GREEN"/>
 <part name="R9" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="IC2" library="freetronics-jon" deviceset="REGMODULE4PIN" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
