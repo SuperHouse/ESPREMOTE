@@ -13,8 +13,7 @@ Features:
  * ESP8266 MCU with wifi.
  * 4 low-side switched transistor outputs.
  * Headers for GND and 3.3V to power the remote control.
- * Switchmode voltage regulator module (5-23Vdc input).
- * 2.1mm DC socket.
+ * USB socket for 5Vdc power input.
 
 ![Oblique view](https://raw.githubusercontent.com/SuperHouse/ESPREMOTE/master/images/ESPREMOTE-v1_0-oblique.jpg)
 
