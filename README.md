@@ -1,19 +1,20 @@
 ESPREMOTE: ESP8266 Remote Control Adapter
 =========================================
 
-Copyright 2017 SuperHouse Automation Pty Ltd  
-SuperHouse site:  www.superhouse.tv  
-SuperHouse email: info@superhouse.tv  
+Copyright 2017-2018 SuperHouse Automation Pty Ltd  www.superhouse.tv  
 
-Allows a random RF remote control to be connected to an ESP8266 so
-that it can be triggered remotely.
+Allows an RF remote control to be connected to an ESP8266 so that it
+can be triggered remotely as if the buttons were pushed.
 
 Features:
 
  * ESP8266 MCU with wifi.
  * 4 low-side switched transistor outputs.
  * Headers for GND and 3.3V to power the remote control.
- * USB socket for 5Vdc power input.
+ * 2.1mm DC jack for 5-24Vdc power input.
+ * Efficient 3.3V switchmode power supply.
+
+Note: Images below are for old v1.0 release. Images need updating.
 
 ![Oblique view](https://raw.githubusercontent.com/SuperHouse/ESPREMOTE/master/images/ESPREMOTE-v1_0-oblique.jpg)
 
