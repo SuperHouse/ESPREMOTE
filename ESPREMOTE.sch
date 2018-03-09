@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.2">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -58,6 +58,8 @@
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="61" name="pt_docu" color="7" fill="0" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -2850,45 +2852,193 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="15" x="-2" y="7" drill="0.8"/>
 <pad name="16" x="-4" y="7" drill="0.8"/>
 </package>
-<package name="USB-MICROB-MB05PMXX">
-<wire x1="-3.4" y1="-2.15" x2="-3" y2="-2.15" width="0.127" layer="51"/>
-<wire x1="3" y1="-2.15" x2="3.4" y2="-2.15" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="-2.15" x2="-3.4" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="-1.45" x2="-3.4" y2="2.85" width="0.127" layer="51"/>
-<wire x1="3.4" y1="2.85" x2="3.2" y2="2.85" width="0.127" layer="51"/>
-<wire x1="3.4" y1="2.85" x2="3.4" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="3.4" y1="-1.45" x2="3.4" y2="-2.15" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="-1.45" x2="3.4" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="1" x2="-3.4" y2="2.85" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="2.85" x2="-3.2" y2="2.85" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="2.85" x2="3.2" y2="2.85" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="1" x2="3.4" y2="2.85" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="-1.45" x2="3.4" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="2.85" x2="-3.2" y2="2.85" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="-2.15" x2="-4" y2="-2.75" width="0.2032" layer="51"/>
-<wire x1="3.4" y1="-2.15" x2="4" y2="-2.75" width="0.2032" layer="51"/>
-<wire x1="-3" y1="-2.15" x2="-3" y2="-2.55" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-2.8" x2="2.75" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="3" y1="-2.6" x2="3" y2="-2.15" width="0.127" layer="51"/>
-<wire x1="-3" y1="-2.55" x2="-2.8" y2="-2.8" width="0.127" layer="51" curve="84.547378"/>
-<wire x1="2.75" y1="-2.8" x2="3" y2="-2.6" width="0.127" layer="51" curve="84.547378"/>
-<smd name="VBUS" x="-1.3" y="2.575" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<smd name="GND" x="1.3" y="2.575" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<smd name="D-" x="-0.65" y="2.575" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<smd name="D+" x="0" y="2.575" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<smd name="ID" x="0.65" y="2.575" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<smd name="FIX1" x="-1.3" y="0" dx="1.5" dy="2" layer="1"/>
-<smd name="FIX2" x="1.3" y="0" dx="1.5" dy="2" layer="1"/>
-<text x="-1.6" y="-0.35" size="0.762" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-2.175" size="0.762" layer="27">&gt;VALUE</text>
-<wire x1="-3.4" y1="-2" x2="-3.4" y2="-1" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="-2" x2="3.4" y2="-1" width="0.2032" layer="21"/>
-<pad name="TAB1" x="-3.625" y="0.2" drill="0.7"/>
-<pad name="SLOT1" x="-3.625" y="-0.2" drill="0.7"/>
-<pad name="TAB2" x="3.625" y="0.2" drill="0.7"/>
-<pad name="SLOT2" x="3.625" y="-0.2" drill="0.7"/>
-<pad name="PIN1" x="-2.425" y="2.65" drill="0.7"/>
-<pad name="PIN2" x="2.425" y="2.65" drill="0.7"/>
+<package name="K78XX-500R3">
+<pad name="2" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
+<wire x1="-5.8" y1="-2.15" x2="5.8" y2="-2.15" width="0.1524" layer="51"/>
+<wire x1="5.8" y1="-2.15" x2="5.8" y2="5.35" width="0.1524" layer="51"/>
+<wire x1="5.8" y1="5.35" x2="-5.8" y2="5.35" width="0.1524" layer="51"/>
+<wire x1="-5.8" y1="5.35" x2="-5.8" y2="-2.15" width="0.1524" layer="51"/>
+<circle x="-4" y="0" radius="0.4" width="0.3" layer="21"/>
+<wire x1="5.8" y1="5.35" x2="-5.8" y2="5.35" width="0.1524" layer="21"/>
+<wire x1="5.8" y1="-2.15" x2="5.8" y2="5.35" width="0.1524" layer="21"/>
+<wire x1="-5.8" y1="5.35" x2="-5.8" y2="-2.15" width="0.1524" layer="21"/>
+<wire x1="-5.8" y1="-2.15" x2="5.8" y2="-2.15" width="0.1524" layer="21"/>
+<text x="-5" y="2" size="1.016" layer="25">&gt;NAME</text>
+<text x="1" y="2" size="1.016" layer="27">&gt;VALUE</text>
+</package>
+<package name="POWER_JACK_SMD">
+<wire x1="-5" y1="4.5" x2="-5" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-5" y1="4.5" x2="-3.5" y2="4.5" width="0.2032" layer="51"/>
+<wire x1="9.8" y1="4.5" x2="9.8" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="-4.5" x2="-5" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="4.5" x2="-3.5" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="-3.5" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="-2.5" x2="-3.5" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="0" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="0" y1="2.5" x2="2.286" y2="0" width="0.2032" layer="21" curve="-90"/>
+<wire x1="2.286" y1="0" x2="0" y2="-2.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="0" y1="-2.5" x2="-3.5" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="4.5" x2="-2" y2="4.5" width="0.2032" layer="21"/>
+<wire x1="2" y1="4.5" x2="4.1" y2="4.5" width="0.2032" layer="21"/>
+<wire x1="8.2" y1="4.5" x2="9.8" y2="4.5" width="0.2032" layer="21"/>
+<wire x1="9.8" y1="-4.5" x2="8.1" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="4.1" y1="-4.5" x2="2" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-2" y1="-4.5" x2="-3.5" y2="-4.5" width="0.2032" layer="21"/>
+<smd name="VIN0" x="0" y="5.7" dx="2.8" dy="2.4" layer="1"/>
+<smd name="GND" x="0" y="-5.7" dx="2.8" dy="2.4" layer="1"/>
+<smd name="VIN1" x="6.1" y="5.7" dx="2.8" dy="2.4" layer="1"/>
+<smd name="P$4" x="6.1" y="-5.7" dx="2.8" dy="2.4" layer="1"/>
+<hole x="0" y="0" drill="2.032"/>
+<hole x="4.572" y="0" drill="2.032"/>
+</package>
+<package name="POWER_JACK_SLOT">
+<wire x1="9.33" y1="13.7" x2="4.83" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="4.83" y1="13.7" x2="0.83" y2="13.7" width="0.2032" layer="51"/>
+<wire x1="0.83" y1="13.7" x2="0.83" y2="12.7" width="0.2032" layer="51"/>
+<wire x1="0.83" y1="12.7" x2="0.83" y2="8.4" width="0.2032" layer="21"/>
+<wire x1="0.83" y1="8.4" x2="0.83" y2="6.55" width="0.2032" layer="51"/>
+<wire x1="0.98" y1="13.8" x2="4.18" y2="13.8" width="0" layer="46"/>
+<wire x1="0.98" y1="13.8" x2="1.48" y2="14.3" width="0" layer="46" curve="-90"/>
+<wire x1="1.48" y1="14.3" x2="3.68" y2="14.3" width="0" layer="46"/>
+<wire x1="3.68" y1="14.3" x2="4.18" y2="13.8" width="0" layer="46" curve="-90"/>
+<wire x1="4.18" y1="13.8" x2="3.68" y2="13.3" width="0" layer="46" curve="-90"/>
+<wire x1="3.68" y1="13.3" x2="1.48" y2="13.3" width="0" layer="46"/>
+<wire x1="1.48" y1="13.3" x2="0.98" y2="13.8" width="0" layer="46" curve="-90"/>
+<wire x1="0.98" y1="7.5" x2="1.48" y2="8" width="0" layer="46" curve="-90"/>
+<wire x1="1.48" y1="8" x2="3.68" y2="8" width="0" layer="46"/>
+<wire x1="3.68" y1="8" x2="4.18" y2="7.5" width="0" layer="46" curve="-90"/>
+<wire x1="4.18" y1="7.5" x2="3.68" y2="7" width="0" layer="46" curve="-90"/>
+<wire x1="3.68" y1="7" x2="1.48" y2="7" width="0" layer="46"/>
+<wire x1="1.48" y1="7" x2="0.98" y2="7.5" width="0" layer="46" curve="-90"/>
+<wire x1="7.58" y1="12.4" x2="8.08" y2="11.9" width="0" layer="46" curve="-90"/>
+<wire x1="8.08" y1="11.9" x2="8.08" y2="9.7" width="0" layer="46"/>
+<wire x1="8.08" y1="9.7" x2="7.58" y2="9.2" width="0" layer="46" curve="-90"/>
+<wire x1="7.58" y1="9.2" x2="7.08" y2="9.7" width="0" layer="46" curve="-90"/>
+<wire x1="7.08" y1="9.7" x2="7.08" y2="11.9" width="0" layer="46"/>
+<wire x1="7.08" y1="11.9" x2="7.58" y2="12.4" width="0" layer="46" curve="-90"/>
+<wire x1="0.83" y1="3.1" x2="0.83" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="9.33" y1="0.1" x2="9.33" y2="3.1" width="0.2032" layer="51"/>
+<wire x1="9.33" y1="0.1" x2="0.83" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="0.83" y1="6.51" x2="0.83" y2="3.1" width="0.2032" layer="21"/>
+<wire x1="9.33" y1="3.1" x2="9.33" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="0.83" y1="3.1" x2="9.33" y2="3.1" width="0.2032" layer="21"/>
+<wire x1="9.33" y1="3.1" x2="9.28" y2="3.1" width="0.2032" layer="21"/>
+<pad name="PWR" x="2.58" y="13.8" drill="1" diameter="2" shape="long"/>
+<pad name="GND@1" x="2.58" y="7.5" drill="1" diameter="2" shape="long"/>
+<pad name="GND@2" x="7.58" y="10.8" drill="1" diameter="2" shape="long" rot="R90"/>
+<text x="0" y="0" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="11.43" y="0" size="1.778" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="POWER_JACK_PTH">
+<wire x1="4.5" y1="13.7" x2="2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="4.5" y2="3" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="3" x2="4.5" y2="8.3" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="13.7" x2="4.5" y2="13" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="13.7" x2="-2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
+<pad name="PWR" x="0" y="13.7" drill="2.9972" diameter="4.318"/>
+<pad name="GND" x="0" y="7.7" drill="2.9972" diameter="4.318"/>
+<pad name="GNDBREAK" x="4.7" y="10.7" drill="2.9972" diameter="4.318" rot="R90"/>
+<text x="-3.81" y="5.08" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-3.81" y="3.81" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="POWER_JACK_COMBO">
+<wire x1="-5" y1="4.5" x2="-5" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-5" y1="4.5" x2="-3.5" y2="4.5" width="0.2032" layer="51"/>
+<wire x1="9.8" y1="4.5" x2="9.8" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-4.5" x2="-5" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="4.5" x2="-3.5" y2="2.5" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="2.5" x2="-3.5" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-2.5" x2="-3.5" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="2.5" x2="0" y2="2.5" width="0.2032" layer="51"/>
+<wire x1="0" y1="2.5" x2="2.286" y2="0" width="0.2032" layer="51" curve="-90"/>
+<wire x1="2.286" y1="0" x2="0" y2="-2.5" width="0.2032" layer="51" curve="-90"/>
+<wire x1="0" y1="-2.5" x2="-3.5" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="4.5" x2="-2" y2="4.5" width="0.2032" layer="51"/>
+<wire x1="2" y1="4.5" x2="4.1" y2="4.5" width="0.2032" layer="51"/>
+<wire x1="8.2" y1="4.5" x2="9.8" y2="4.5" width="0.2032" layer="51"/>
+<wire x1="9.8" y1="-4.5" x2="8.1" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="4.1" y1="-4.5" x2="2" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-4.5" x2="-3.5" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="8.62" y1="-1.96" x2="8.62" y2="0.14" width="0.2032" layer="51"/>
+<wire x1="-2.08" y1="7.04" x2="-4.98" y2="7.04" width="0.2032" layer="51"/>
+<wire x1="-4.98" y1="-1.96" x2="-2.08" y2="-1.96" width="0.2032" layer="51"/>
+<wire x1="-4.98" y1="-1.96" x2="-4.98" y2="7.04" width="0.2032" layer="51"/>
+<wire x1="-2.08" y1="-1.96" x2="3.22" y2="-1.96" width="0.2032" layer="51"/>
+<wire x1="8.62" y1="-1.96" x2="7.92" y2="-1.96" width="0.2032" layer="51"/>
+<wire x1="-2.08" y1="7.04" x2="8.62" y2="7.04" width="0.2032" layer="51"/>
+<wire x1="8.62" y1="7.04" x2="8.62" y2="4.94" width="0.2032" layer="51"/>
+<wire x1="-2.08" y1="7.04" x2="-2.08" y2="-1.96" width="0.2032" layer="51"/>
+<wire x1="0" y1="5.715" x2="6.35" y2="5.715" width="1.27" layer="1"/>
+<wire x1="6.35" y1="5.715" x2="6.35" y2="5.08" width="1.27" layer="1"/>
+<wire x1="6.35" y1="5.08" x2="8.89" y2="2.54" width="1.27" layer="1"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-1.905" width="1.27" layer="1"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="-5.715" width="1.27" layer="1"/>
+<wire x1="2.54" y1="-5.715" x2="0" y2="-5.715" width="1.27" layer="1"/>
+<wire x1="6.35" y1="-5.715" x2="2.54" y2="-5.715" width="1.27" layer="1"/>
+<wire x1="5.715" y1="-1.905" x2="2.54" y2="-1.905" width="1.27" layer="1"/>
+<pad name="POWER" x="8.62" y="2.54" drill="2.9972" rot="R270"/>
+<pad name="GND@1" x="2.62" y="2.54" drill="2.9972" rot="R270"/>
+<pad name="GND" x="5.62" y="-2.16" drill="2.9972"/>
+<smd name="POWER@1" x="0" y="5.7" dx="2.8" dy="2.4" layer="1"/>
+<smd name="GND@3" x="0" y="-5.7" dx="2.8" dy="2.4" layer="1"/>
+<smd name="POWER@2" x="6.1" y="5.7" dx="2.8" dy="2.4" layer="1"/>
+<smd name="GND@4" x="6.1" y="-5.7" dx="2.8" dy="2.4" layer="1"/>
+<text x="-5.08" y="7.62" size="1.778" layer="25">&gt;NAME</text>
+<hole x="0" y="0" drill="1.6"/>
+<hole x="5.08" y="0" drill="1.6"/>
+</package>
+<package name="POWER_JACK_PTH_LOCK">
+<wire x1="4.3476" y1="14.2588" x2="2.4" y2="14.2588" width="0.2032" layer="21"/>
+<wire x1="-4.3476" y1="3.2794" x2="-4.3476" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.3476" y1="0.1" x2="4.3476" y2="3.2794" width="0.2032" layer="51"/>
+<wire x1="4.3476" y1="0.1" x2="-4.3476" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.3476" y1="3.254" x2="4.3476" y2="8.3" width="0.2032" layer="21"/>
+<wire x1="4.3476" y1="14.2588" x2="4.3476" y2="13" width="0.2032" layer="21"/>
+<wire x1="-4.3476" y1="3.254" x2="-4.3476" y2="14.2588" width="0.2032" layer="21"/>
+<wire x1="-4.3476" y1="14.2588" x2="-2.4" y2="14.2588" width="0.2032" layer="21"/>
+<wire x1="-4.3476" y1="3.254" x2="4.3476" y2="3.254" width="0.2032" layer="21"/>
+<pad name="PWR" x="0" y="13.8778" drill="3.2" diameter="4.1148"/>
+<pad name="GND" x="0.0254" y="6.557" drill="2.9972" diameter="4.1148"/>
+<pad name="GNDBREAK" x="3.7616" y="10.7" drill="2.9972" diameter="4.1148" rot="R90"/>
+<text x="-3.81" y="5.08" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-3.81" y="3.81" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2159" y1="12.1793" x2="0.2413" y2="15.1003" layer="51" rot="R90"/>
+<rectangle x1="-0.1397" y1="6.3119" x2="0.1397" y2="8.7503" layer="51" rot="R90"/>
+<rectangle x1="4.4704" y1="9.4742" x2="4.7498" y2="11.9126" layer="51" rot="R180"/>
+</package>
+<package name="POWER_JACK_PTH_SLOTS">
+<wire x1="4.5" y1="13.7" x2="2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="4.5" y2="3" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="3" x2="4.5" y2="8.3" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="13.7" x2="4.5" y2="13" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="13.7" x2="-2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
+<pad name="PWR" x="0" y="13.7" drill="1" diameter="2" shape="long"/>
+<pad name="GND" x="0" y="7.7" drill="1" diameter="2" shape="long"/>
+<pad name="GNDBREAK" x="4.7" y="10.7" drill="1" diameter="2" shape="long" rot="R90"/>
+<text x="-3.81" y="5.08" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-3.81" y="3.81" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-1" y1="7.2" x2="-1" y2="8.2" width="0" layer="46" curve="-180"/>
+<wire x1="-1" y1="8.2" x2="1" y2="8.2" width="0" layer="46"/>
+<wire x1="1" y1="8.2" x2="1" y2="7.2" width="0" layer="46" curve="-180"/>
+<wire x1="1" y1="7.2" x2="-1" y2="7.2" width="0" layer="46"/>
+<wire x1="-1" y1="14.2" x2="1" y2="14.2" width="0" layer="46"/>
+<wire x1="1" y1="13.2" x2="-1" y2="13.2" width="0" layer="46"/>
+<wire x1="1" y1="14.2" x2="1" y2="13.2" width="0" layer="46" curve="-180"/>
+<wire x1="-1" y1="13.2" x2="-1" y2="14.2" width="0" layer="46" curve="-180"/>
+<wire x1="5.2" y1="9.7" x2="4.2" y2="9.7" width="0" layer="46" curve="-180"/>
+<wire x1="4.2" y1="11.7" x2="5.2" y2="11.7" width="0" layer="46" curve="-180"/>
+<wire x1="4.2" y1="9.7" x2="4.2" y2="11.7" width="0" layer="46"/>
+<wire x1="5.2" y1="11.7" x2="5.2" y2="9.7" width="0" layer="46"/>
 </package>
 </packages>
 <symbols>
@@ -3007,23 +3157,33 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="3" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="USB-6P">
-<wire x1="5.08" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<text x="2.54" y="-6.35" size="2.54" layer="95" rot="R90">&gt;NAME</text>
-<pin name="D+" x="-5.08" y="0" visible="pad" length="short"/>
-<pin name="D-" x="-5.08" y="-2.54" visible="pad" length="short"/>
-<pin name="VBUS" x="-5.08" y="-5.08" visible="pad" length="short"/>
-<pin name="GND" x="-5.08" y="5.08" visible="pad" length="short"/>
-<pin name="ID" x="-5.08" y="2.54" visible="pad" length="short"/>
-<pin name="TAB1" x="0" y="-12.7" visible="pad" length="short" rot="R90"/>
-<pin name="TAB2" x="0" y="12.7" visible="pad" length="short" rot="R270"/>
-<pin name="FIX1" x="2.54" y="-12.7" visible="pad" length="short" rot="R90"/>
-<pin name="FIX2" x="2.54" y="12.7" visible="pad" length="short" rot="R270"/>
-<pin name="PIN2" x="-5.08" y="7.62" visible="pad" length="short"/>
-<pin name="PIN1" x="-5.08" y="-7.62" visible="pad" length="short"/>
-<text x="5.08" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<symbol name="78XX">
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<text x="2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.032" y="-4.318" size="1.524" layer="95">GND</text>
+<text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
+<text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
+<pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="in"/>
+<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="in" rot="R90"/>
+<pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="out" rot="R180"/>
+</symbol>
+<symbol name="POWERJACK">
+<wire x1="-10.16" y1="2.54" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<text x="-10.16" y="10.16" size="1.778" layer="96">&gt;Value</text>
+<text x="-10.16" y="0" size="1.778" layer="95">&gt;Name</text>
+<rectangle x1="-10.16" y1="6.858" x2="0" y2="8.382" layer="94"/>
+<pin name="GNDBREAK" x="2.54" y="5.08" visible="off" length="short" rot="R180"/>
+<pin name="GND" x="2.54" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="PWR" x="2.54" y="7.62" visible="off" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4348,24 +4508,85 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="USB-6P">
+<deviceset name="K78XX-500R3">
 <gates>
-<gate name="G$1" symbol="USB-6P" x="0" y="0"/>
+<gate name="G$1" symbol="78XX" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="SMT" package="USB-MICROB-MB05PMXX">
+<device name="" package="K78XX-500R3">
 <connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="FIX1" pad="FIX1"/>
-<connect gate="G$1" pin="FIX2" pad="FIX2"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWER_JACK" prefix="J">
+<description>&lt;b&gt;Power Jack&lt;/b&gt;
+This is the standard 5.5mm barrel jack for power. The PTH is the most common, proven, reliable, footprint. All others are experimental. The Slot footprint only works if the mill layer is transmitted to the PCB fab house so be warned. Spark Fun Electronics SKU : PRT-00119. Mating wall wart : TOL-00298 (and others)</description>
+<gates>
+<gate name="G$1" symbol="POWERJACK" x="7.62" y="-2.54"/>
+</gates>
+<devices>
+<device name="SMD" package="POWER_JACK_SMD">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$4"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GND"/>
+<connect gate="G$1" pin="PWR" pad="VIN0"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SLT" package="POWER_JACK_SLOT">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND@2"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GND@1"/>
+<connect gate="G$1" pin="PWR" pad="PWR"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH" package="POWER_JACK_PTH">
+<connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="ID" pad="ID"/>
-<connect gate="G$1" pin="PIN1" pad="PIN1"/>
-<connect gate="G$1" pin="PIN2" pad="PIN2"/>
-<connect gate="G$1" pin="TAB1" pad="TAB1"/>
-<connect gate="G$1" pin="TAB2" pad="TAB2"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK"/>
+<connect gate="G$1" pin="PWR" pad="PWR"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="COMBO" package="POWER_JACK_COMBO">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND@1"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GND"/>
+<connect gate="G$1" pin="PWR" pad="POWER"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH_LOCK" package="POWER_JACK_PTH_LOCK">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK"/>
+<connect gate="G$1" pin="PWR" pad="PWR"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH_SLOTS" package="POWER_JACK_PTH_SLOTS">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK"/>
+<connect gate="G$1" pin="PWR" pad="PWR"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5439,68 +5660,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </deviceset>
 </devicesets>
 </library>
-<library name="freetronics-luke">
-<packages>
-<package name="SOT-223">
-<description>SOT-223</description>
-<wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.778" x2="-3.2766" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.778" x2="3.2766" y2="1.778" width="0.2032" layer="21"/>
-<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="-3.81" y="6.4008" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="5.0292" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LD1117-FIXED">
-<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<text x="-3.81" y="7.239" size="1.27" layer="95">&gt;NAME</text>
-<text x="-3.81" y="5.588" size="1.27" layer="96">&gt;VALUE</text>
-<text x="-1.9558" y="-1.778" size="1.524" layer="95">GND</text>
-<text x="-4.445" y="1.905" size="1.524" layer="95">IN</text>
-<text x="0.635" y="1.905" size="1.524" layer="95">OUT</text>
-<pin name="IN" x="-7.62" y="2.54" visible="off" length="short" direction="in"/>
-<pin name="GND" x="0" y="-5.08" visible="off" length="short" direction="in" rot="R90"/>
-<pin name="OUT" x="7.62" y="2.54" visible="off" length="short" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LD1117-FIXED" prefix="IC">
-<description>Fixed-voltage LD1117 series LDOs in SOT-223 package.
-Note that the ground pin is labelled as ground, not as adj, because it's not the adjustable-voltage part.</description>
-<gates>
-<gate name="G$1" symbol="LD1117-FIXED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-223">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5568,17 +5727,17 @@ Note that the ground pin is labelled as ground, not as adj, because it's not the
 <part name="LED6" library="freetronics-master-v1" deviceset="LED" device="0603" value="GREEN"/>
 <part name="R9" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="C6" library="freetronics-jon" deviceset="C-EU" device="C0805" value="10uF 10V 0805"/>
-<part name="IC3" library="freetronics-luke" deviceset="LD1117-FIXED" device="" value="LD111733"/>
 <part name="U$4" library="freetronics-original" deviceset="5V" device=""/>
-<part name="P1" library="freetronics-jon" deviceset="USB-6P" device="SMT"/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
+<part name="REG1" library="freetronics-jon" deviceset="K78XX-500R3" device="" value="K7803-500R3"/>
+<part name="J1" library="freetronics-jon" deviceset="POWER_JACK" device="PTH_SLOTS" value="2.1MM DC Jack"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="7.62" y="6.858" size="1.778" layer="94">SKU: ESPREMOTE</text>
 <text x="7.62" y="12.7" size="2.794" layer="94">SuperHouse Automation ESP8266 Remote</text>
-<text x="81.28" y="6.858" size="1.778" layer="94">V2.0 (2017-07-29)</text>
+<text x="81.28" y="6.858" size="1.778" layer="94">V3.0 (2018-03-09)</text>
 <text x="35.306" y="6.858" size="1.778" layer="94">www.superhouse.tv/espremote</text>
 <frame x1="5.08" y1="5.08" x2="109.22" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="78.74" y1="5.08" x2="109.22" y2="10.16" columns="8" rows="5" layer="94"/>
@@ -5598,13 +5757,15 @@ Note that the ground pin is labelled as ground, not as adj, because it's not the
 <text x="144.78" y="172.72" size="2.1844" layer="97" font="vector" ratio="15">Outputs</text>
 <text x="10.16" y="114.3" size="2.1844" layer="97" font="vector" ratio="15">ESP-12 Module (ESP8266)</text>
 <text x="104.14" y="172.72" size="2.1844" layer="97" font="vector" ratio="15">3.3V FTDI Header</text>
-<text x="53.34" y="170.18" size="1.778" layer="97" font="vector" ratio="10">5Vdc input.
-USB for power only, no data</text>
+<text x="7.62" y="142.24" size="1.778" layer="97" font="vector" ratio="10">5-24Vdc input</text>
 <text x="25.4" y="25.4" size="1.778" layer="97" font="vector" ratio="10">Output 1: GPIO12
 Output 2: GPIO13
 Output 3: GPIO14
 Output 4: GPIO4</text>
-<text x="50.8" y="162.56" size="1.27" layer="98">SOT-223</text>
+<text x="38.1" y="48.26" size="1.778" layer="97">Output 1</text>
+<text x="38.1" y="45.72" size="1.778" layer="97">Output 2</text>
+<text x="38.1" y="50.8" size="1.778" layer="97">Output 3</text>
+<text x="96.52" y="55.88" size="1.778" layer="97">Output 4</text>
 </plain>
 <instances>
 <instance part="LED1" gate="G$1" x="88.9" y="139.7"/>
@@ -5732,16 +5893,10 @@ Output 4: GPIO4</text>
 <attribute name="NAME" x="40.64" y="142.24" size="1.4224" layer="95"/>
 <attribute name="VALUE" x="40.64" y="139.7" size="1.4224" layer="96"/>
 </instance>
-<instance part="IC3" gate="G$1" x="55.88" y="152.4" smashed="yes">
-<attribute name="NAME" x="50.8" y="160.02" size="1.27" layer="95"/>
-<attribute name="VALUE" x="50.8" y="157.988" size="1.27" layer="96"/>
-</instance>
 <instance part="U$4" gate="G$1" x="38.1" y="157.48"/>
-<instance part="P1" gate="G$1" x="15.24" y="149.86" smashed="yes" rot="R180">
-<attribute name="NAME" x="12.7" y="146.05" size="2.54" layer="95" rot="R90"/>
-<attribute name="VALUE" x="15.24" y="142.24" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="GND7" gate="1" x="88.9" y="129.54"/>
+<instance part="REG1" gate="G$1" x="55.88" y="154.94"/>
+<instance part="J1" gate="G$1" x="22.86" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -5774,42 +5929,21 @@ Output 4: GPIO4</text>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="132.08" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="GND"/>
 <junction x="55.88" y="132.08"/>
 <wire x1="55.88" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="137.16" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
 <junction x="38.1" y="132.08"/>
-<pinref part="P1" gate="G$1" pin="GND"/>
-<wire x1="20.32" y1="144.78" x2="25.4" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="144.78" x2="25.4" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="PIN2"/>
-<wire x1="20.32" y1="142.24" x2="25.4" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="PIN1"/>
-<wire x1="20.32" y1="157.48" x2="25.4" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="157.48" x2="25.4" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="142.24" x2="25.4" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="132.08" x2="15.24" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="TAB2"/>
-<wire x1="15.24" y1="132.08" x2="15.24" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="132.08" x2="12.7" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="FIX2"/>
-<wire x1="12.7" y1="132.08" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="157.48" x2="25.4" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="TAB1"/>
-<wire x1="25.4" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="167.64" x2="15.24" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="FIX1"/>
-<wire x1="15.24" y1="167.64" x2="12.7" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="167.64" x2="12.7" y2="162.56" width="0.1524" layer="91"/>
-<junction x="15.24" y="132.08"/>
-<junction x="25.4" y="142.24"/>
-<junction x="25.4" y="144.78"/>
-<junction x="25.4" y="157.48"/>
-<junction x="15.24" y="167.64"/>
-<wire x1="25.4" y1="132.08" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="132.08" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <junction x="88.9" y="132.08"/>
-<junction x="25.4" y="132.08"/>
+<pinref part="REG1" gate="G$1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="GNDBREAK"/>
+<wire x1="25.4" y1="152.4" x2="33.02" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="152.4" x2="33.02" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="33.02" y1="149.86" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="149.86" x2="33.02" y2="149.86" width="0.1524" layer="91"/>
+<junction x="33.02" y="149.86"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="144.78" x2="180.34" y2="139.7" width="0.1524" layer="91"/>
@@ -5873,7 +6007,7 @@ Output 4: GPIO4</text>
 <net name="GPIO4" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPIO4"/>
-<wire x1="93.98" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="55.88" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
 <label x="111.76" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -5885,7 +6019,7 @@ Output 4: GPIO4</text>
 <net name="GPIO14" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPIO14"/>
-<wire x1="58.42" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
 <label x="25.4" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -5897,7 +6031,7 @@ Output 4: GPIO4</text>
 <net name="GPIO12" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPIO12"/>
-<wire x1="58.42" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
 <label x="25.4" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -5909,7 +6043,7 @@ Output 4: GPIO4</text>
 <net name="GPIO13" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPIO13"/>
-<wire x1="58.42" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
 <label x="25.4" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -6057,7 +6191,6 @@ Output 4: GPIO4</text>
 <pinref part="P+10" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="OUT"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="157.48" x2="88.9" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="154.94" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
@@ -6068,6 +6201,7 @@ Output 4: GPIO4</text>
 <junction x="71.12" y="154.94"/>
 <wire x1="88.9" y1="154.94" x2="71.12" y2="154.94" width="0.1524" layer="91"/>
 <junction x="88.9" y="154.94"/>
+<pinref part="REG1" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -6211,15 +6345,15 @@ Output 4: GPIO4</text>
 </net>
 <net name="5V" class="0">
 <segment>
-<wire x1="20.32" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="154.94" x2="48.26" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="144.78" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <junction x="38.1" y="154.94"/>
-<pinref part="IC3" gate="G$1" pin="IN"/>
 <wire x1="38.1" y1="154.94" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="5V"/>
-<pinref part="P1" gate="G$1" pin="VBUS"/>
+<pinref part="REG1" gate="G$1" pin="IN"/>
+<pinref part="J1" gate="G$1" pin="PWR"/>
+<wire x1="38.1" y1="154.94" x2="25.4" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
