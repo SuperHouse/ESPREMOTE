@@ -5766,6 +5766,8 @@ Output 4: GPIO4</text>
 <text x="38.1" y="45.72" size="1.778" layer="97">Output 2</text>
 <text x="38.1" y="50.8" size="1.778" layer="97">Output 3</text>
 <text x="96.52" y="55.88" size="1.778" layer="97">Output 4</text>
+<text x="220.98" y="162.56" size="1.778" layer="97">Tx Power</text>
+<text x="220.98" y="137.16" size="1.778" layer="97">Tx Buttons</text>
 </plain>
 <instances>
 <instance part="LED1" gate="G$1" x="88.9" y="139.7"/>
@@ -6361,13 +6363,19 @@ Output 4: GPIO4</text>
 </sheets>
 <errors>
 <approved hash="104,1,58.42,43.18,IC1,VCC,3.3V,,,"/>
-<approved hash="104,1,66.04,160.02,IC3,OUT,3.3V,,,"/>
+<approved hash="208,1,35.56,104.14,3.3V,sup,,,,"/>
+<approved hash="208,1,132.08,157.48,3.3V,sup,,,,"/>
+<approved hash="208,1,213.36,160.02,3.3V,sup,,,,"/>
+<approved hash="208,1,180.34,172.72,3.3V,sup,,,,"/>
+<approved hash="208,1,180.34,129.54,3.3V,sup,,,,"/>
+<approved hash="208,1,180.34,86.36,3.3V,sup,,,,"/>
+<approved hash="208,1,180.34,43.18,3.3V,sup,,,,"/>
+<approved hash="208,1,88.9,157.48,3.3V,sup,,,,"/>
+<approved hash="208,1,63.5,154.94,3.3V,out,,,,"/>
 <approved hash="209,1,58.42,58.42,ADC,,,,,"/>
 <approved hash="106,1,58.42,58.42,ADC,,,,,"/>
 <approved hash="106,1,93.98,53.34,GPIO5,,,,,"/>
 <approved hash="106,1,58.42,53.34,GPIO16,,,,,"/>
-<approved hash="113,1,221.657,154.745,H2,,,,,"/>
-<approved hash="113,1,221.657,126.805,H3,,,,,"/>
 </errors>
 </schematic>
 </drawing>
