@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3096,8 +3096,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="GPIO15" x="17.78" y="-7.62" length="middle" rot="R180"/>
 <pin name="GPIO2" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <pin name="GPIO0" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="GPIO5" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="GPIO4" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO5" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO4" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="RXD" x="17.78" y="5.08" length="middle" direction="in" rot="R180"/>
 <pin name="TXD" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
 </symbol>
@@ -3385,8 +3385,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connect gate="G$1" pin="GPIO15" pad="10"/>
 <connect gate="G$1" pin="GPIO16" pad="4"/>
 <connect gate="G$1" pin="GPIO2" pad="11"/>
-<connect gate="G$1" pin="GPIO4" pad="14"/>
-<connect gate="G$1" pin="GPIO5" pad="13"/>
+<connect gate="G$1" pin="GPIO4" pad="13"/>
+<connect gate="G$1" pin="GPIO5" pad="14"/>
 <connect gate="G$1" pin="RXD" pad="15"/>
 <connect gate="G$1" pin="TXD" pad="16"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
@@ -3408,8 +3408,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connect gate="G$1" pin="GPIO15" pad="10"/>
 <connect gate="G$1" pin="GPIO16" pad="4"/>
 <connect gate="G$1" pin="GPIO2" pad="11"/>
-<connect gate="G$1" pin="GPIO4" pad="14"/>
-<connect gate="G$1" pin="GPIO5" pad="13"/>
+<connect gate="G$1" pin="GPIO4" pad="13"/>
+<connect gate="G$1" pin="GPIO5" pad="14"/>
 <connect gate="G$1" pin="RXD" pad="15"/>
 <connect gate="G$1" pin="TXD" pad="16"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
@@ -5737,7 +5737,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <plain>
 <text x="7.62" y="6.858" size="1.778" layer="94">SKU: ESPREMOTE</text>
 <text x="7.62" y="12.7" size="2.794" layer="94">SuperHouse Automation ESP8266 Remote</text>
-<text x="81.28" y="6.858" size="1.778" layer="94">V3.0 (2018-03-09)</text>
+<text x="81.28" y="6.858" size="1.778" layer="94">V3.1 (2018-03-28)</text>
 <text x="35.306" y="6.858" size="1.778" layer="94">www.superhouse.tv/espremote</text>
 <frame x1="5.08" y1="5.08" x2="109.22" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="78.74" y1="5.08" x2="109.22" y2="10.16" columns="8" rows="5" layer="94"/>
@@ -5761,7 +5761,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="25.4" y="25.4" size="1.778" layer="97" font="vector" ratio="10">Output 1: GPIO12
 Output 2: GPIO13
 Output 3: GPIO14
-Output 4: GPIO4</text>
+Output 4: GPIO5</text>
 <text x="38.1" y="48.26" size="1.778" layer="97">Output 1</text>
 <text x="38.1" y="45.72" size="1.778" layer="97">Output 2</text>
 <text x="38.1" y="50.8" size="1.778" layer="97">Output 3</text>
@@ -6002,20 +6002,20 @@ Output 4: GPIO4</text>
 <net name="GPIO5" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPIO5"/>
-<wire x1="93.98" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
-<label x="111.76" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIO4" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPIO4"/>
-<wire x1="93.98" y1="55.88" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
 <label x="111.76" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="20.32" x2="144.78" y2="20.32" width="0.1524" layer="91"/>
 <label x="147.32" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO4" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="GPIO4"/>
+<wire x1="93.98" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
+<label x="111.76" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO14" class="0">
